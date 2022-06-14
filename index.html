@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚽Futbalshop⚽</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel = "stylesheet" type = "text/css" media = "print" href = "styles.css">
+  </head>
+  <body>
+    <script>
+      var premenna = "false";
+      function Showlist() {
+        if (premenna == "false") {
+          $(".hid").show(500);
+          premenna = "true";
+        } else {
+          $(".hid").hide(500);
+          premenna = "false";
+        }
+      }
+    </script>
+    <video autoplay muted loop class="video">
+      <source src="images/video.mov" type="video/mp4" />
+    </video>
+    <nav>
+      <div class="logo"></div>
+      <div class="scroller" onclick="Showlist()"></div>
+      <ul class="hamburger">
+        <li class="hid"><a href="#kontakt">Kontakt</a></li>
+        <li class="hid"><a href="#hreff">Výber</li></a>
+        <li class="hid"><a href="#wrapper">Ponuky</li></a>
+      </ul>
+    </nav>
+    <script>
+      var meno = "false"
+        $(".logo").click(function () {
+          if (meno=="false"){
+            $(".logo").css("width", "100px");
+            $(".logo").css("height", "100px");
+            $(".logo").css("transition", "500ms");
+            meno="true";
+          }
+          else{
+            $(".logo").css("width", "75px");
+            $(".logo").css("height", "75px");
+            $(".logo").css("transition", "500ms");
+            meno="false";
+          }
+            });
+    </script>
+    <section>
+      <h1 id="hreff">Výber</h1>
+      <div>
+        <ul id="content">
+          <li class="list" data-filter="Vsetci">Všetci</li>
+          <li class="list" data-filter="ST">ST <br></li>
+          <li class="list" data-filter="LW">LW <br></li>
+          <li class="list" data-filter="RW">RW <br></li>
+          <li class="list" data-filter="CF">CF <br></li>
+          <li class="list" data-filter="CAM">CAM <br></li>
+          <li class="list" data-filter="CM">CM <br></li>
+          <li class="list" data-filter="LM">LM <br></li>
+          <li class="list" data-filter="RM">RM <br></li>
+          <li class="list" data-filter="CDM">CDM <br></li>
+          <li class="list" data-filter="LB">LB <br></li>
+          <li class="list" data-filter="RB">RB <br></li>
+          <li class="list" data-filter="CB">CB <br></li>
+          <li class="list" data-filter="GK">GK <br></li>
+        </ul>
+      </div>
+    </section>
+    <div id="wrapper">
+<!-- messi -->
+<div class="card RW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p158023.png?v=22" alt="" />
+  <h2>Lionel Messi (34)</h2>
+  <h3>Pravé Krídlo (RW)</h3>
+  <p>Štát - Argentína <br> Team - Paris Saint-Germain</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- lewa -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p188545.png?v=22" alt="" />
+  <h2>Robert Lewandowski (33)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Poľsko <br> Team - FC Bayern Mníchov</p>
+  <h1>50 Miliónov</h1>
+</div>
+<!-- mbappe -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p231747.png?v=22" alt="" />
+  <h2>Kylian Mbappé (23)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Francúzsko <br> Team - Paris Saint-Germain</p>
+  <h1>160 Miliónov</h1>
+</div>
+<!-- Ján Oblák -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p200389.png?v=22" alt="" />
+  <h2>Ján Oblák (29)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Slovinsko <br> Team - Atlético Madrid</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Kevin De Bruyne -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192985.png?v=22" alt="" />
+  <h2>Kevin De Bruyne (30)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Belgium <br> Team - Manchester City</p>
+  <h1>90 Miliónov</h1>
+</div>
+<!-- Cristiano Ronaldo -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p20801.png?v=22" alt="" />
+  <h2>Cristiano Ronaldo (37)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Portugal <br> Team - Manchester United</p>
+  <h1>35 Miliónov</h1>
+</div>
+<!-- Neymar JR. -->
+<div class="card LW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p190871.png?v=22" alt="" />
+  <h2>Neymar JR. (30)</h2>
+  <h3>Ľavé Krídlo (LW)</h3>
+  <p>Štát - Brazília <br> Team - Paris Saint-Germain</p>
+  <h1>90 Miliónov</h1>
+</div>
+<!-- Marc-André ter Stegen -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192448.png?v=22" alt="" />
+  <h2>Marc-André ter Stegen (30)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Nemecko <br> Team - FC Barcelona</p>
+  <h1>45 Miliónov</h1>
+</div>
+<!-- Harry Kane -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p202126.png?v=22" alt="" />
+  <h2>Harry Kane (28)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Anglicko <br> Team - Tottenham Hotspur</p>
+  <h1>100 Miliónov</h1>
+</div>
+<!-- N'Golo Kanté -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p215914.png?v=22" alt="" />
+  <h2>N'Golo Kanté (31)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Francúzsko <br> Team - Chelsea</p>
+  <h1>50 Miliónov</h1>
+</div>
+
+<!-- 11. -->
+<!-- Manuel Neuer -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p167495.png?v=22" alt="" />
+  <h2>Manuel Neuer (36)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Nemecko <br> Team - FC Bayern Mníchov</p>
+  <h1>14 Miliónov</h1>
+</div>
+<!-- Gianluigi Donnarumma -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p230621.png?v=22" alt="" />
+  <h2>Gianluigi Donnarumma (23)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Taliansko <br> Team - Paris Saint-Germain</p>
+  <h1>65 Miliónov</h1>
+</div>
+<!-- Ederson Santana de Moraes -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p210257.png?v=22" alt="" />
+  <h2>Ederson Santana de Moraes (28)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Brazília <br> Team - Manchester City</p>
+  <h1>50 Miliónov</h1>
+</div>
+<!-- Thibaut Courtois -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192119.png?v=22" alt="" />
+  <h2>Thibaut Courtois (30)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Belgicko <br> Team - Real Madrid</p>
+  <h1>65 Miliónov</h1>
+</div>
+<!-- Joshua Kimmich -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p212622.png?v=22" alt="" />
+  <h2>Joshua Kimmich (27)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Nemecko <br> Team - FC Bayern München</p>
+  <h1>85 Miliónov</h1>
+</div>
+<!-- Alisson Becker -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p212831.png?v=22" alt="" />
+  <h2>Alisson Becker (29)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Brazília <br> Team - Liverpool</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Carlos Casemiro -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p200145.png?v=22" alt="" />
+  <h2>Carlos Casemiro (30)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Brazília <br> Team - Real Madrid</p>
+  <h1>50 Miliónov</h1>
+</div>
+<!-- Mohamed Salah -->
+<div class="card RW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p209331.png?v=22" alt="" />
+  <h2>Mohamed Salah (29)</h2>
+  <h3>Pravé Krídlo (RW)</h3>
+  <p>Štát - Egypt <br> Team - Liverpool</p>
+  <h1>100 Miliónov</h1>
+</div>
+<!-- Sadio Mané -->
+<div class="card LW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p208722.png?v=22" alt="" />
+  <h2>Sadio Mané (30)</h2>
+  <h3>Ľavé Krídlo (LW)</h3>
+  <p>Štát - Senegal <br> Team - Liverpool</p>
+  <h1>80 Miliónov</h1>
+</div>
+<!-- Heung Min Son -->
+<div class="card LM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p200104.png?v=22" alt="" />
+  <h2>Heung Min Son (29)</h2>
+  <h3>Ľavý stredopoliar (LM)</h3>
+  <p>Štát - Južná Kórea <br> Team - Tottenham Hotspur</p>
+  <h1>80 Miliónov</h1>
+</div>
+
+<!-- 21. -->
+<!-- Karim Benzema -->
+<div class="card CF">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p165153.png?v=22" alt="" />
+  <h2>Karim Benzema (34)</h2>
+  <h3>Stredný Útočník (CF)</h3>
+  <p>Štát - Francúzsko <br> Team - Real Madrid</p>
+  <h1>25 Miliónov</h1>
+</div>
+<!-- Virgil van Dijk -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p203376.png?v=22" alt="" />
+  <h2>Virgil van Dijk (30)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Holandsko <br> Team - Liverpool</p>
+  <h1>55 Miliónov</h1>
+</div>
+<!-- Bruno Fernandes -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p212198.png?v=22" alt="" />
+  <h2>Bruno Fernandes (27)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Portugalsko <br> Team - Manchester United</p>
+  <h1>90 Miliónov</h1>
+</div>
+<!-- Raheem Sterling -->
+<div class="card LW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p202652.png?v=22" alt="" />
+  <h2>Raheem Sterling (27)</h2>
+  <h3>Ľavé krídlo (LW)</h3>
+  <p>Štát - Anglicko <br> Team - Manchester City</p>
+  <h1>85 Miliónov</h1>
+</div>
+<!-- Luis Suárez -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p176580.png?v=22" alt="" />
+  <h2>Luis Suárez (35)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Anglicko <br> Team - Manchester City</p>
+  <h1>10 Miliónov</h1>
+</div>
+<!-- Sergio Ramos -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p155862.png?v=22" alt="" />
+  <h2>Sergio Ramos (36)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Španielsko <br> Team - Paris Saint-Germain</p>
+  <h1>8 Miliónov</h1>
+</div>
+<!-- Toni Kroos -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p182521.png?v=22" alt="" />
+  <h2>Toni Kroos (32)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Nemecko <br> Team - Real Madrid</p>
+  <h1>25 Miliónov</h1>
+</div>
+<!-- Romelu Lukaku -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192505.png?v=22" alt="" />
+  <h2>Romelu Lukaku (29)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Belgicko <br> Team - Chelsea</p>
+  <h1>85 Miliónov</h1>
+</div>
+<!-- Keylor Navas -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p193041.png?v=22" alt="" />
+  <h2>Keylor Navas (35)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Kostarika <br> Team - Paris Saint-Germain</p>
+  <h1>10 Miliónov</h1>
+</div>
+
+<!-- 31. -->
+<!-- Frenkie de Jong -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p228702.png?v=22" alt="" />
+  <h2>Frenkie de Jong (25)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Holandsko <br> Team - FC Barcelona</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Trent Alexander-Arnold -->
+<div class="card RB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p231281.png?v=22" alt="" />
+  <h2>Trent Alexander-Arnold (23)</h2>
+  <h3>Pravý Obranca (RB)</h3>
+  <p>Štát - Anglicko <br> Team - Liverpool</p>
+  <h1>80 Miliónov</h1>
+</div>
+<!-- Jadon Sancho -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p233049.png?v=22" alt="" />
+  <h2>Jadon Sancho (22)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Anglicko <br> Team - Manchester United</p>
+  <h1>80 Miliónov</h1>
+</div>
+<!-- Rúben Dias -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p239818.png?v=22" alt="" />
+  <h2>Rúben Dias (25)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Portugalsko <br> Team - Manchester City</p>
+  <h1>75 Miliónov</h1>
+</div>
+<!-- Marcos Marquinhos -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p207865.png?v=22" alt="" />
+  <h2>Marcos Marquinhos (28)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Brazília <br> Team - Paris Saint-Germain</p>
+  <h1>75 Miliónov</h1>
+</div>
+<!-- Leon Goretzka -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p209658.png?v=22" alt="" />
+  <h2>Leon Goretzka (27)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Nemecko <br> Team - FC Bayern Mníchov</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Andrew Robertson -->
+<div class="card LB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p216267.png?v=22" alt="" />
+  <h2>Andrew Robertson (28)</h2>
+  <h3>Ľavý Obranca (LB)</h3>
+  <p>Štát - Škótsko <br> Team - Liverpool</p>
+  <h1>65 Miliónov</h1>
+</div>
+<!-- Paulo Dybala -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p211110.png?v=22" alt="" />
+  <h2>Paulo Dybala (28)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Argentína <br> Team - Juventus</p>
+  <h1>40 Miliónov</h1>
+</div>
+<!-- Luka Modrić -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p177003.png?v=22" alt="" />
+  <h2>Luka Modrić (36)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Chorvátsko <br> Team - Real Madrid</p>
+  <h1>10 Miliónov</h1>
+</div>
+<!-- Paul Pogba -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p195864.png?v=22" alt="" />
+  <h2>Paul Pogba (29)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Francúzsko <br> Team - Manchester United</p>
+  <h1>55 Miliónov</h1>
+</div>
+
+<!-- 41. -->
+<!-- Marco Verratti -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p199556.png?v=22" alt="" />
+  <h2>Marco Verratti (29)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Taliansko <br> Team - Paris Saint-Germain</p>
+  <h1>50 Miliónov</h1>
+</div>
+<!-- Ángel Di María -->
+<div class="card RW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p183898.png?v=22" alt="" />
+  <h2>Ángel Di María (34)</h2>
+  <h3>Pravé Krídlo (RW)</h3>
+  <p>Štát - Argentína <br> Team - Paris Saint-Germain</p>
+  <h1>12 Miliónov</h1>
+</div>
+<!-- Thomas Müller -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p189596.png?v=22" alt="" />
+  <h2>Thomas Müller (32)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Nemecko <br> Team - FC Bayern Mníchov</p>
+  <h1>25 Miliónov</h1>
+</div>
+<!-- Ciro Immobile -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192387.png?v=22" alt="" />
+  <h2>Ciro Immobile (32)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Taliansko <br> Team - Lazio</p>
+  <h1>30 Miliónov</h1>
+</div>
+<!-- Hugo Lloris -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p167948.png?v=22" alt="" />
+  <h2>Hugo Lloris (35)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Francúzsko <br> Team - Tottenham Hotspur</p>
+  <h1>7 Miliónov</h1>
+</div>
+<!-- Wojciech Szczęsny -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p186153.png?v=22" alt="" />
+  <h2>Wojciech Szczęsny (32)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Poľsko <br> Team - Juventus</p>
+  <h1>15 Miliónov</h1>
+</div>
+<!-- Marcos Llorente -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p226161.png?v=22" alt="" />
+  <h2>Marcos Llorente (27)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Španielsko <br> Team - Atlético Madrid</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Rodrigo Hernández -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p231866.png?v=22" alt="" />
+  <h2>Rodrigo Hernández (25)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Španielsko <br> Team - Manchester City</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Aymeric Laporte -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p212218.png?v=22" alt="" />
+  <h2>Aymeric Laporte (28)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Španielsko <br> Team - Manchester City</p>
+  <h1>45 Miliónov</h1>
+</div>
+
+<!-- 51.  (-1) -->
+<!-- Fábio Henrique -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p209499.png?v=22" alt="" />
+  <h2>Fábio Henrique (28)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Brazília <br> Team - Liverpool</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Raphaël Varane -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p201535.png?v=22" alt="" />
+  <h2>Raphaël Varane (29)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Francúzsko <br> Team - Manchester United</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Milan Škriniar -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p232363.png?v=22" alt="" />
+  <h2>Milan Škriniar (27)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Slovensko <br> Team - Inter Milano</p>
+  <h1>65 Miliónov</h1>
+</div>
+<!-- João Cancelo -->
+<div class="card RB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p210514.png?v=22" alt="" />
+  <h2>João Cancelo (28)</h2>
+  <h3>Pravý Obranca (RB)</h3>
+  <p>Štát - Portugalsko <br> Team - Manchester City</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Bernardo Silva -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p218667.png?v=22" alt="" />
+  <h2>Bernardo Silva (27)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Portugalsko <br> Team - Manchester City</p>
+  <h1>75 Miliónov</h1>
+</div>
+<!-- Kingsley Coman -->
+<div class="card LM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p213345.png?v=22" alt="" />
+  <h2>Kingsley Coman (25)</h2>
+  <h3>Ľavý Stredopoliar (LM)</h3>
+  <p>Štát - Francúzsko <br> Team - FC Bayern Mníchov</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Koen Casteels -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p192984.png?v=22" alt="" />
+  <h2>Koen Casteels (29)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Belgicko <br> Team - VfL Wolfsburg</p>
+  <h1>14 Miliónov</h1>
+</div>
+<!-- Jordi Alba -->
+<div class="card LB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p189332.png?v=22" alt="" />
+  <h2>Jordi Alba (33)</h2>
+  <h3>Ľavý Obranca (LB)</h3>
+  <p>Štát - Španielsko <br> Team - FC Barcelona</p>
+  <h1>12 Miliónov</h1>
+</div>
+<!-- Thiago Alcântara -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p189509.png?v=22" alt="" />
+  <h2>Thiago Alcântara (31)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Španielsko <br> Team - Liverpool</p>
+  <h1>22 Miliónov</h1>
+</div>
+<!-- Daniel Parejo -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p189513.png?v=22" alt="" />
+  <h2>Daniel Parejo (33)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Španielsko <br> Team - Villarreal CF</p>
+  <h1>9 Miliónov</h1>
+</div>
+
+<!-- 61. (-1) -->
+<!-- Jamie Vardy -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p208830.png?v=22" alt="" />
+  <h2>Jamie Vardy (35)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Anglicko <br> Team - Leicester City</p>
+  <h1>5 Miliónov</h1>
+</div>
+<!-- Gerard Moreno -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p208093.png?v=22" alt="" />
+  <h2>Gerard Moreno (30)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Španielsko <br> Team - Villarreal CF</p>
+  <h1>40 Miliónov</h1>
+</div>
+<!-- Mats Hummels -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p178603.png?v=22" alt="" />
+  <h2>Mats Hummels (33)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Nemecko <br> Team - Borussia Dortmund</p>
+  <h1>9 Miliónov</h1>
+</div>
+<!-- Riyad Mahrez -->
+<div class="card RW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p204485.png?v=22" alt="" />
+  <h2>Riyad Mahrez (31)</h2>
+  <h3>Pravé Krídlo (RW)</h3>
+  <p>Štát - Alžírsko <br> Team - Manchester City</p>
+  <h1>40 Miliónov</h1>
+</div>
+<!-- Lorenzo Insigne -->
+<div class="card LW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p198219.png?v=22" alt="" />
+  <h2>Lorenzo Insigne (30)</h2>
+  <h3>Ľavé Krídlo (LW)</h3>
+  <p>Štát - Taliansko <br> Team - Neapol</p>
+  <h1>25 Miliónov</h1>
+</div>
+<!-- Sergio Busquets -->
+<div class="card CDM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p189511.png?v=22" alt="" />
+  <h2>Sergio Busquets (33)</h2>
+  <h3>Stredný Defenzívny Stredopoliar (CDM)</h3>
+  <p>Štát - Španielsko <br> Team - FC Barcelona</p>
+  <h1>9 Miliónov</h1>
+</div>
+<!-- Giorgio Chiellini -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p138956.png?v=22" alt="" />
+  <h2>Giorgio Chiellini (37)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Taliansko <br> Team - Juventus</p>
+  <h1>1,5 Miliónov</h1>
+</div>
+<!-- Kalidou Koulibaly -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p201024.png?v=22" alt="" />
+  <h2>Kalidou Koulibaly (30)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Senegal <br> Team - Neapol</p>
+  <h1>45 Miliónov</h1>
+</div>
+<!-- Samir Handanovič -->
+<div class="card GK">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p162835.png?v=22" alt="" />
+  <h2>Samir Handanovič (37)</h2>
+  <h3>Brankár (GK)</h3>
+  <p>Štát - Slovinsko <br> Team - Inter Milano</p>
+  <h1>2,5 Miliónov</h1>
+</div>
+<!-- Matthijs de Ligt -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p235243.png?v=22" alt="" />
+  <h2>Matthijs de Ligt (22)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Holandsko <br> Team - Juventus</p>
+  <h1>70 Miliónov</h1>
+</div>
+
+<!-- 71. (-1) -->
+<!-- Marcus Rashford -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p231677.png?v=22" alt="" />
+  <h2>Marcus Rashford (24)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Anglicko <br> Team - Manchester United</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Lautaro Martínez -->
+<div class="card ST">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p231478.png?v=22" alt="" />
+  <h2>Lautaro Martínez (24)</h2>
+  <h3>Útočník (ST)</h3>
+  <p>Štát - Argentína <br> Team - Inter Milano</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Mikel Oyarzabal -->
+<div class="card LW">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p230142.png?v=22" alt="" />
+  <h2>Mikel Oyarzabal (25)</h2>
+  <h3>Ľavé Krídlo (LW)</h3>
+  <p>Štát - Španielsko <br> Team - Real Sociedad</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Achraf Hakimi -->
+<div class="card RB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p235212.png?v=22" alt="" />
+  <h2>Achraf Hakimi (23)</h2>
+  <h3>Pravý Obranca (RB)</h3>
+  <p>Štát - Maroko <br> Team - Paris Saint-Germain</p>
+  <h1>65 Miliónov</h1>
+</div>
+<!-- Wilfred Ndidi -->
+<div class="card CB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p226790.png?v=22" alt="" />
+  <h2>Wilfred Ndidi (25)</h2>
+  <h3>Stredný Obranca (CB)</h3>
+  <p>Štát - Nigéria <br> Team - Leicester City</p>
+  <h1>60 Miliónov</h1>
+</div>
+<!-- Sergej Milinković-Savić -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p223848.png?v=22" alt="" />
+  <h2>Sergej Milinković-Savić (27)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Srbsko<br> Team - Lazio</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Memphis Depay -->
+<div class="card CF">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p202556.png?v=22" alt="" />
+  <h2>Memphis Depay (28)</h2>
+  <h3>Stredný Útočník (CF)</h3>
+  <p>Štát - Holandsko<br> Team - FC Barcelona</p>
+  <h1>45 Miliónov</h1>
+</div>
+<!-- Serge Gnabry -->
+<div class="card RM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p206113.png?v=22" alt="" />
+  <h2>Serge Gnabry (26)</h2>
+  <h3>Pravý Stredopoliar (RM)</h3>
+  <p>Štát - Nemecko<br> Team - FC Bayern Mníchov</p>
+  <h1>70 Miliónov</h1>
+</div>
+<!-- Antoine Griezmann -->
+<div class="card CAM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p194765.png?v=22" alt="" />
+  <h2>Antoine Griezmann (31)</h2>
+  <h3>Stredný Útočný Stredopoliar (CAM)</h3>
+  <p>Štát - Francúzsko<br> Team - Atlético Madrid</p>
+  <h1>50 Miliónov</h1>
+</div>
+<!-- Jorge Koke -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p193747.png?v=22" alt="" />
+  <h2>Jorge Koke (30)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Španielsko<br> Team - Atlético Madrid</p>
+  <h1>35 Miliónov</h1>
+</div>
+
+<!-- 81. (-1) -->
+<!-- İlkay Gündoğan -->
+<div class="card CM">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p186942.png?v=22" alt="" />
+  <h2>İlkay Gündoğan (31)</h2>
+  <h3>Stredný Záložník (CM)</h3>
+  <p>Štát - Nemecko<br> Team - Manchester City</p>
+  <h1>35 Miliónov</h1>
+</div>
+<!-- Kyle Walker -->
+<div class="card RB">
+  <img src="https://cdn.fifacm.com/content/media/imgs/fifa22/players/p188377.png?v=22" alt="" />
+  <h2>Kyle Walker (32)</h2>
+  <h3>Pravý Obranca (RB)</h3>
+  <p>Štát - Anglicko<br> Team - Manchester City</p>
+  <h1>25 Miliónov</h1>
+</div>
+
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'Vsetci'){
+              $('.card').show('1000');
+            }
+            else{
+              $('.card').not('.'+value).hide('1000');
+              $('.card').filter('.'+value).show('1000')
+            }
+        })
+        $('.list').click(function(){
+          $(this)
+        })
+      })
+    </script>
+
+    <script>
+      function poslat(){
+        alert("Správa odoslaná!");
+      }
+    </script>
+  <a class="sipka" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <div id="kontakt">
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.4213194498116!2d18.607860577875886!3d48.21776123734951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476adc50bc1cb149%3A0x3a78136849caf07e!2sErrea%2Ffutbalshop!5e0!3m2!1ssk!2ssk!4v1653994671201!5m2!1ssk!2ssk" 
+    width="100%" height="auto" style="border:0" allowfullscreen="" loading="smooth" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="formular">
+        <h1>Kontaktujte nás</h1>
+        <form>
+          <input type="text" placeholder="Meno" class="formy"/>
+          <input type="text" placeholder="Priezvisko" class="formy"/>
+          <textarea placeholder="Tu napíšte svoju správu..." class="area"></textarea>
+          <button class="submit" onclick="poslat()">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h1>Web Design by <a href="https://m.facebook.com/adam.vojtko.73">@AdamVojtko</a> & <a href="https://m.facebook.com/simon.ludrovsky?fref=nf&rc=p">@SimonLudrovsky</a></h1>
+    </footer>
+  </body>
+</html>
